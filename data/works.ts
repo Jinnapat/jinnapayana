@@ -229,7 +229,7 @@ export const works = [{
         src: "https://www.canva.com/design/DAGUexTiBEc/6utxyxUpb64TnXgPKt5JDg/edit?utm_content=DAGUexTiBEc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     images: [
-        "https://res.cloudinary.com/dkseqorxe/video/upload/v1733764263/output_en1oli.mp4",
+        "https://res.cloudinary.com/dkseqorxe/video/upload/v1733766548/output_wmnxsy.mp4",
         "/gallery/lsed/4ZNTJ30RT6GAJPO0.mp4",
         "/gallery/lsed/466067291_1096493678600702_4080444932951851301_n.jpg",
         "/gallery/lsed/49F39B3A-A77F-45C1-81E1-183B54987B61.jpg",
