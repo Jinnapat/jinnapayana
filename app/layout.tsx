@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${maitree.className} bg-[url('../public/images/library.webp')] w-full bg-contain text-white`}
+        className={`${maitree.className} bg-[url('../public/images/library.webp')] w-full text-white`}
       >
         <div className="h-36 w-full bg-black bg-opacity-50 flex flex-col items-center justify-center gap-2">
           <h1 className="text-white text-5xl text-center">Welcome to my world</h1>

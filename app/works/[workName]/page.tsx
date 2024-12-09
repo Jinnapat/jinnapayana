@@ -22,10 +22,17 @@ export default async function Work({ params }: {
         </div>
         <div className="bg-black bg-opacity-90 w-full p-8 flex flex-col lg:flex-row gap-5 items-center">
             <b className="text-4xl w-full lg:w-1/3">{workData.title}</b>
-            <div className="flex flex-col gap-3 w-full lg:w-2/3 text-xl">{workData.description.map((d) => <p key={d}>{d}</p>)}</div>
+            <div className="flex flex-col gap-3 w-full lg:w-2/3 text-xl">
+                {workData.description.map((d) => <p key={d}>{d}</p>)}
+                {workData.link && <a href={workData.link.src} target="_blank" className="text-amber-100 hover:text-amber-400 transition-colors duration-300">{workData.link.label}</a>}
+            </div>
         </div>
-        <div className="flex flex-col lg:flex-row flex-wrap items-start">
-            {workData.images.map((w) => <Image className="w-full lg:w-1/2 self-start" key={w.src} src={w.src} width={1000} height={1000} alt="image" objectFit="cover"></Image>)}
+        <div className="flex flex-col lg:flex-row flex-wrap items-stretch">
+            {
+                workData.images.map((w) => w.endsWith(".mp4") || w.endsWith(".mov")?
+                <video className="w-full lg:w-1/2 self-cener" key={w} src={w} controls={true}></video>
+                :<Image className="w-full lg:w-1/2 self-cener" key={w} src={w} width={1000} height={1000} alt="image" objectFit="cover"></Image>)
+            }
         </div>
     </div>)
 }
