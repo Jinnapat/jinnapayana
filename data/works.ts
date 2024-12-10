@@ -5,10 +5,10 @@ export const works = [{
     description: [
         "ฉันชอบเล่นบอร์ดเกมตั้งแต่เด็ก จากความชอบนั้นทำให้ฉันอยากสร้างเกมของตัวเอง โดยเฉพาะเกมแนว Dungeons & Dragons ที่ฉันได้ผันตัวจากการเป็นผู้เล่นมาเป็น Dungeon Master หรือผู้ที่คอยเล่าเรื่องและชี้นำเส้นทางของตัวละคร สิ่งที่ฉันอยากทำต่อไปคือบอร์ดเกมที่ใช้สื่ออื่น ๆ มาช่วยเพิ่มความน่าสนใจ โดยฉันมีต้นแบบในใจคือ Mansions of Madness ซึ่งได้มีการใช้ทั้งเกมกระดานและแอปพลิเคชัน มาสร้างความน่าสนใจและเพิ่มขอบเขตพื้นที่ที่อยู่นอกเหนือในกระดานเกม",
     ],
-    link: {
+    link: [{
         label: "กดเพื่อดูเว็บไซต์ DND ของฉัน",
         src: "https://jinnapajstp20.wixsite.com/my-site-13",
-    },
+    }],
     images: [
         "/gallery/dnd/1.png",
         "/gallery/dnd/2.png",
@@ -67,10 +67,10 @@ export const works = [{
         "โดยนำ project ที่เคยทำมาพัฒนาต่อร่วมกับทีม ฉันรับผิดชอบการออกแบบ UI ของแอปพลิเคชัน และดีไซน์รูปแบบการเล่นเกม ซึ่งเป็นโอกาสที่ทำให้ฉันได้ประยุกต์ความรู้ด้านการออกแบบและการแก้ปัญหาในบริบทที่ทันสมัยและตอบโจทย์ผู้ใช้งานได้อย่างแท้จริง",
         "ซึ่งเป็นการแข่งขันพัฒนาแอปพลิเคชันเกมเพื่อการเรียนรู้ประวัติศาสตร์ ฉันรับผิดชอบในการแต่งเนื้อเรื่องที่สอดคล้องกับประวัติศาสตร์ภาคเหนือ การออกแบบตัวละคร และการสร้างคำถามเพื่อทดสอบความรู้ของผู้เล่นผ่านภารกิจต่าง ๆ"
     ],
-    link: {
+    link: [{
         label: "Pitch deck การแข่งขัน",
         src: "https://www.canva.com/design/DAFzSQNzvEs/_RC4fePIzs5efzC-OgHkfg/edit?utm_content=DAFzSQNzvEs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    },
+    }],
     images: [
         "/gallery/nsc_and_88_learnlab/โปสเตอร์ ขนาด 60x80 cm.jpg",
         "/gallery/nsc_and_88_learnlab/job.jpg",
@@ -224,10 +224,13 @@ export const works = [{
     description: [
         "ทำให้ฉันเข้าใจเชิงลึกเกี่ยวกับการศึกษา การพัฒนาสังคม และการสร้างสื่อการเรียนรู้ที่หลากหลาย เช่น การทำ E-book สำหรับแนะนำการจัดทำแผนการสอน สื่อ Stop Motion เพื่ออธิบายโรค Scoliosis การออกแบบเว็บไซต์แนะแนวเกี่ยวกับเกม DND และการสร้าง animation ผ่านโปรแกรม Animaker สิงคโปร์เอาชนะสงครามโลกครั้งที่ 2 ได้ยังไง พร้อมทั้งพัฒนาบอร์ดเกมเพื่อการเรียนรู้ นอกจากนี้ ฉันยังได้ไปฝึกสอนในโรงเรียนและจัดกิจกรรม FA (Facilitation Activities) ซึ่งช่วยเสริมทักษะการออกแบบกิจกรรมและการทำงานร่วมกับผู้อื่น"
     ],
-    link: {
+    link: [{
         label: "สื่อที่ใช้ในการเรียนรู้ เด็ก ป.5",
         src: "https://www.canva.com/design/DAGUexTiBEc/6utxyxUpb64TnXgPKt5JDg/edit?utm_content=DAGUexTiBEc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    },
+    }, {
+        label: "ช่องทางติดตาม Scolirisk",
+        src: "https://www.instagram.com/scolirisk",
+    }],
     images: [
         "https://res.cloudinary.com/dkseqorxe/video/upload/v1733766548/output_wmnxsy.mp4",
         "/gallery/lsed/4ZNTJ30RT6GAJPO0.mp4",

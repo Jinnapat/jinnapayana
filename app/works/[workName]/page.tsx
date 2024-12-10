@@ -36,7 +36,7 @@ export default async function Work({ params }: {
             <b className="text-4xl w-full lg:w-1/3">{workData.title}</b>
             <div className="flex flex-col gap-3 w-full lg:w-2/3 text-xl">
                 {workData.description.map((d) => <p key={d}>{d}</p>)}
-                {workData.link && <a href={workData.link.src} target="_blank" className="text-amber-100 hover:text-amber-400 transition-colors duration-300">{workData.link.label}</a>}
+                {workData.link && (workData.link.map((link) => <a key={link.src} href={link.src} target="_blank" className="text-amber-100 hover:text-amber-400 transition-colors duration-300">{link.label}</a>))}
             </div>
         </div>
         <div className="flex flex-col lg:flex-row flex-wrap items-stretch">
