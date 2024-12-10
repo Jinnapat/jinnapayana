@@ -270,6 +270,9 @@ export const works = [{
         "/gallery/lsed/กราฟที่ 4.png",
         "/gallery/lsed/กราฟที่3.png",
         "/gallery/lsed/วิชาสอน.png",
+        "/gallery/lsed/ประมวนความรู้ 2.pdf",
+        "/gallery/lsed/Home-School-กับการศึกษา.pdf",
+        "/gallery/lsed/บทความ Nationalism.pdf",
     ],
 },
 ]
