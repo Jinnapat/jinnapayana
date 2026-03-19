@@ -9,7 +9,7 @@ export default function Works() {
         <div className="flex flex-col lg:flex-row flex-wrap">
             {
                 works.map((work) => <Link key={work.title} href={"/works/" + work.workName} className="relative w-full lg:w-1/3">
-                    <Image src={work.image} alt="work image" width={1000} height={1000}></Image>
+                    <Image src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${work.image}`} alt="work image" width={1000} height={1000}></Image>
                     <p className="absolute top-0 p-4 lg:opacity-0 hover:opacity-100 w-full h-full lg:bg-gray-700 transition-opacity duration-500 lg:bg-opacity-90 text-2xl">{work.title}</p>
                 </Link>)
             }

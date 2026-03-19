@@ -3,14 +3,14 @@ import { works } from "@/data/works";
 import Link from "next/link";
 
 function getDisplayElement(filename: string) {
-    if (filename.endsWith(".mp4") || filename.endsWith(".mov")) return <video className="w-full lg:w-1/2 border border-amber-700" key={filename} src={filename} controls={true}></video>;
+    if (filename.endsWith(".mp4") || filename.endsWith(".mov")) return <video className="w-full lg:w-1/2 border border-amber-700" key={filename} src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${filename}`} controls={true}></video>;
     if (filename.endsWith(".pdf")) return (
         <div key={filename} className="w-full lg:w-1/2 relative border border-amber-700">
-            <Image className="w-full h-full"  src={filename.replace(".pdf", ".jpg")} width={1000} height={1000} alt="image" objectFit="cover"></Image>
-            <a href={filename} target="_blank" className="absolute top-0 p-1 lg:p-4 lg:opacity-0 hover:opacity-100 lg:w-full lg:h-full transition-opacity duration-500 lg:bg-opacity-90 text-lg bg-gray-700">คลิกเพื่ออ่าน</a>
+            <Image className="w-full h-full"  src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${filename.replace(".pdf", ".jpg")}`} width={1000} height={1000} alt="image"></Image>
+            <a href={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${filename}`} target="_blank" className="absolute top-0 p-1 lg:p-4 lg:opacity-0 hover:opacity-100 lg:w-full lg:h-full transition-opacity duration-500 lg:bg-opacity-90 text-lg bg-gray-700">คลิกเพื่ออ่าน</a>
         </div>
     );
-    return <Image className="w-full lg:w-1/2 border border-amber-700" key={filename} src={filename} width={1000} height={1000} alt="image" objectFit="cover"></Image>;
+    return <Image className="w-full lg:w-1/2 border border-amber-700" key={filename} src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${filename}`} width={1000} height={1000} alt="image"></Image>;
 }
 
 

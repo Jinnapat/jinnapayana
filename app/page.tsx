@@ -37,7 +37,8 @@ const skills = [
   }, {
     title: "Art & Creativity Skills",
     description: [
-      "วาดภาพสีน้ำ สีไม้ และออกแบบโลโก้"
+      "วาดภาพสีน้ำ สีไม้ และออกแบบโลโก้",
+      "ร่วมโครงการ Gifted School โปรแกรมวิชา Animation and Visual Effects มหาวิทยาลัยเชียงใหม่ (พ.ศ. 2563) - วิชา 3D ระดับ A  - วิชา Basic Drawing and Computer Graphic ระดับ B+ "
     ],
     image: "/images/s5.webp"
   }, {
@@ -55,8 +56,9 @@ export default function Home() {
     <div className="w-full flex flex-col p-3 gap-6 max-w-7xl lg:flex-row">
       <div className="flex flex-col gap-5 items-center lg:w-1/4 w-full">
         <div className="flex flex-col items-center bg-[#545142] bg-opacity-80 p-4 gap-2">
-          <Image src="/images/logo.webp" width={1000} height={1000} alt="logo"></Image>
+          <Image className="border-2 border-yellow-500 rounded-lg" src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}/images/my_pic.webp`} width={1000} height={1000} alt="logo"></Image>
           <b className="text-center">| 2003's | INTP-T | Home school | JSTP 20 | LSEd7 | TU88 |</b>
+          <p className="text-center">จบการศึกษาด้วยเกรดเฉลี่ย 3.52 (เกียรตินิยมอันดับสอง)</p>
           <p className="text-center text-sm">​เรียนรู้ให้สนุก เหมือนเล่นเกมที่ไม่มีวันจบ <br></br>เพราะทุกบทเรียนคือชัยชนะใหม่</p>
         </div>
         <div className="flex flex-col items-center bg-[#545142] bg-opacity-80 p-4 w-full">
@@ -69,7 +71,7 @@ export default function Home() {
           <b className="text-xl">Experience and Achievements</b>
           {
             works.map((work) => <Link key={work.title} href={"/works/" + work.workName} className="relative">
-              <Image src={work.image} alt="work image" width={1000} height={1000}></Image>
+              <Image src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${work.image}`} alt="work image" width={1000} height={1000}></Image>
               <p className="absolute top-0 p-4 lg:opacity-0 hover:opacity-100 w-full h-full lg:bg-gray-700 transition-opacity duration-500 lg:bg-opacity-90">{work.title}</p>
             </Link>)
           }
@@ -80,16 +82,15 @@ export default function Home() {
         <b className="text-lg">What I Can Offer</b>
         <p>จากประสบการณ์การแข่งขันทางการศึกษาตั้งแต่ปี 2018 ถึงปี 2023 ฉันได้เรียนรู้การทำงานร่วมกับผู้คนหลากหลาย ทั้งในด้านความคิด ประสบการณ์ และมุมมองที่แตกต่าง เมื่อได้เข้าเรียนคณะวิทยาการเรียนรู้และศึกษาศาสตร์ หลักสูตรได้เปิดให้ลงมือปฏิบัติจริง แต่ฉันก็สรุปว่าสิ่งที่ฉันได้เรียนรู้ยังต้องได้รับการพัฒนาอีกมาก ทำให้ฉันอยากมีโอกาสได้ฝึกงานเพื่อสัมผัสกับสภาพความเป็นจริงที่ฉันต้องเจอในอนาคตจริง โดยเฉพาะอย่างยิ่ง การลงมือปฏิบัติที่เกี่ยวข้องกับบอร์ดเกมและปัญหาด้านการศึกษาในสังคม</p>
         <p>ฉันคิดว่าการนำความชอบและความถนัดของตัวเองมาสร้างประโยชน์ให้องค์กรได้ อย่างความสนใจในศึกษาทางด้านการศึกษาพฤติกรรมการเรียนรู้ในช่วงวัยต่าง ๆ ผสมผสานกับความชอบในเกม ฉันเชื่อว่าตนเองสามารถออกแบบและพัฒนาสื่อการเรียนรู้ที่ทั้งให้ความรู้และสนุกสนาน โดยนำเสนอในรูปแบบที่เข้าใจง่ายและสอดคล้องกับกระบวนการเรียนรู้ของมนุษย์</p>
-        <p>ฉันหวังเป็นอย่างยิ่งว่าการฝึกงานครั้งนี้จะช่วยต่อยอดทั้งประสบการณ์และความรู้ที่ฉันมีอยู่ พร้อมเปิดโอกาสให้ฉันได้ลงมือทำจริงในสิ่งที่ฉันหลงใหลและต้องการพัฒนา</p>
         {
-          skills.map((skill) => <div key={skill.title} className="flex flex-col lg:flex-row gap-2 p-4 lg:p-8 rounded-x bg-black shadow-sm bg-opacity-80">
+          skills.map((skill) => <div key={skill.title} className="flex flex-col lg:flex-row gap-2 p-4 lg:p-8 rounded-x bg-black shadow-sm bg-opacity-80 rounded-lg">
             <div className="w-full lg:w-2/3">
               <b className="text-2xl">{skill.title}</b>
               <div className="w-full h-0 border border- mt-4 mb-8"></div>
               <ul>{skill.description.map((d) => <li key={d} className="list-disc ml-9 text-lg">{d}</li>)}</ul>
             </div>
             <div className="w-full lg:w-1/3">
-              <Image src={skill.image} alt="eduction image" width={5000} height={5000} className="border-2 border-yellow-500"></Image>
+              <Image src={`${process.env.NEXT_PUBLIC_STORAGE_BASE_URL}${skill.image}`} alt="eduction image" width={5000} height={5000} className="border-2 border-yellow-500 rounded-lg"></Image>
             </div>
           </div>)
         }

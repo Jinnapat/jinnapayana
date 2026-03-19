@@ -1,4 +1,62 @@
-export const works = [{
+export const works: {
+    title: string;
+    workName: string;
+    image: string;
+    description: string[];
+    link?: {
+        label: string;
+        src: string;
+    }[];
+    images: string[];
+}[] = [{
+    title: "การพัฒนาบอร์ดเกมเพื่อเสริมสร้างสมรรถนะด้านการจัดการชั้นเรียนของนักศึกษาครู มหาวิทยาลัยราชภัฏเชียงใหม่ (2568)",
+    workName: "classroom-simulation",
+    image: "/gallery/classroom_simulation/cs01.jpg",
+    description: [
+        "ผลงานชิ้นนี้คือการพัฒนาบอร์ดเกมดิจิทัลแบบ Hybrid ที่เปลี่ยนเรื่องการจัดการชั้นเรียนจากทฤษฎีให้กลายเป็นสถานการณ์จำลองที่นักศึกษาครูได้ลงมือคิด วางแผน และตัดสินใจจริงอย่างปลอดภัย จุดเด่นคือการผสานกระดานเกมกับระบบดิจิทัล เพื่อสร้างประสบการณ์ใกล้เคียงห้องเรียนจริง และเปิดพื้นที่ให้ฝึกทั้งการแก้ปัญหา การสื่อสาร และการทำงานร่วมกันแบบ Co-Teaching ถ้าอยากเห็นว่างานออกแบบการเรียนรู้จะพัฒนาไปไกลกว่าสื่อการสอนได้อย่างไร งานนี้คือหนึ่งในตัวอย่างที่ชัดที่สุดว่าเกมสามารถกลายเป็นนวัตกรรมฝึกสมรรถนะครูได้จริง"
+    ],
+    link: [{
+        label: "ลองคุยกับนักเรียนที่หนูสร้าง",
+        src: "https://classroom-simulation-board-game-tra.vercel.app/"
+    }],
+    images: [
+        "/gallery/classroom_simulation/cs01.jpg",
+        "/gallery/classroom_simulation/cs02.jpg",
+        "/gallery/classroom_simulation/cs03.jpg",
+        "/gallery/classroom_simulation/ab353984-0dca-4923-8916-1521445899d6.jpg",
+        "/gallery/classroom_simulation/chat1.png",
+        "/gallery/classroom_simulation/chat2.png",
+        "/gallery/classroom_simulation/chat3.png",
+        "/gallery/classroom_simulation/chat4.png",
+        "/gallery/classroom_simulation/chat5.png",
+        "/gallery/classroom_simulation/chat6.png",
+        "/gallery/classroom_simulation/86d18d61-50f2-4f3a-abfb-861a9aecdf44.mp4",
+        "/gallery/classroom_simulation/b7a2389c-9ded-458d-b845-8ec6d4996a57.mp4",
+        "/gallery/classroom_simulation/cs04.jpg",
+        "/gallery/classroom_simulation/cs05.jpg",
+        "/gallery/classroom_simulation/cs06.jpg",
+        "/gallery/classroom_simulation/cs07.jpg",
+        "/gallery/classroom_simulation/cs08.jpg",
+        "/gallery/classroom_simulation/cs09.jpg",
+        "/gallery/classroom_simulation/cs10.jpg",
+        "/gallery/classroom_simulation/cs11.jpg",
+        "/gallery/classroom_simulation/cs12.jpg",
+        "/gallery/classroom_simulation/cs13.jpg",
+        "/gallery/classroom_simulation/cs14.jpg",
+        "/gallery/classroom_simulation/cs15.jpg",
+        "/gallery/classroom_simulation/cs16.jpg",
+        "/gallery/classroom_simulation/cs17.jpg",
+        "/gallery/classroom_simulation/cs18.jpg",
+        "/gallery/classroom_simulation/cs19.jpg",
+        "/gallery/classroom_simulation/66a21f0a-cb66-486f-8ad7-093aa931e945.mp4",
+        "/gallery/classroom_simulation/cs20.jpg",
+        "/gallery/classroom_simulation/cs21.jpg",
+        "/gallery/classroom_simulation/cs22.jpg",
+        "/gallery/classroom_simulation/cs23.jpg",
+        "/gallery/classroom_simulation/cs24.jpg",
+        "/gallery/classroom_simulation/cs25.jpg",
+    ],
+}, {
     title: "Project ตามความสนใจ Dungeons & Dragons (DND) และวิธีการทำงาน",
     workName: "dnd",
     image: "/images/w1.webp",
@@ -278,4 +336,4 @@ export const works = [{
         "/gallery/lsed/บทความ Nationalism.pdf",
     ],
 },
-]
+    ]
